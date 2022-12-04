@@ -1,4 +1,4 @@
-import { GlobalStyle } from './GlobalStyle';
+import { Container, GlobalStyle, Title } from './GlobalStyle';
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
 import { ContactForm } from './ContactForm';
@@ -52,17 +52,17 @@ export class App extends Component {
   render() {
     const { filter } = this.state;
     return (
-      <>
-        <h1>Phonebook</h1>
+      <Container>
+        <Title>Phonebook</Title>
         <ContactForm onSubmit={this.addContact} />
-        <h2>Contacts</h2>
+        <Title>Contacts</Title>
         <Filter value={filter} onChange={this.ChangeFilter} />
         <ContactList
           contacts={this.getFilterOnContact()}
           onDelete={this.deleteContact}
         />
         <GlobalStyle />
-      </>
+      </Container>
     );
   }
 }

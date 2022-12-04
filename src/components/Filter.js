@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import { Field, Input, Label } from './Filter.styled';
 
 export const Filter = ({ value, onChange }) => {
   return (
-    <>
-      <label>Fined contacts by name</label>
-      <input
+    <Field>
+      <Label>Fined contacts by name</Label>
+      <Input
         onChange={onChange}
         value={value}
         type="text"
@@ -13,7 +14,7 @@ export const Filter = ({ value, onChange }) => {
         title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
         required
       />
-    </>
+    </Field>
   );
 };
 

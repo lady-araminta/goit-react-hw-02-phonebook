@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import 'modern-normalize';
 
 export const GlobalStyle = createGlobalStyle`
@@ -9,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: teal;
 }
 
 code {
@@ -36,4 +38,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+`;
+
+export const Container = styled.div`
+  outline: 1px solid teal;
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+`;
+
+export const Title = styled.h2`
+  text-align: center;
 `;
