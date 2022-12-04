@@ -41,7 +41,6 @@ img {
 `;
 
 export const Container = styled.div`
-  outline: 1px solid teal;
   max-width: 840px;
   margin-left: auto;
   margin-right: auto;

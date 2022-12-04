@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const FormBox = styled.form`
   display: flex;
-  outline: 1px solid red;
   padding: 24px;
   justify-content: center;
   align-content: center;
